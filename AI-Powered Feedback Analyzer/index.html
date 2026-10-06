@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI-Powered Feedback Analyzer">
+    <title>AI-Powered Feedback Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <span>AI</span> Feedback Analyzer
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#analyzer">Analyzer</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="tag">SMART FEEDBACK ANALYSIS</p>
+
+                <h1>
+                    Turn Feedback Into
+                    <span>Meaningful Insights</span>
+                </h1>
+
+                <p>
+                    Analyze customer, student, employee, or product feedback
+                    using sentiment, keywords, and intelligent text analysis.
+                </p>
+
+                <a href="#analyzer" class="hero-btn">
+                    Analyze Feedback
+                </a>
+            </div>
+
+            <div class="hero-card">
+                <div class="ai-circle">AI</div>
+                <h3>Intelligent Analysis</h3>
+                <p>
+                    Positive, negative and neutral feedback classification
+                    with instant insights.
+                </p>
+            </div>
+        </section>
+
+        <!-- Analyzer -->
+        <section class="analyzer-section" id="analyzer">
+
+            <div class="section-heading">
+                <p>AI ANALYZER</p>
+                <h2>Analyze Your Feedback</h2>
+                <span>
+                    Enter feedback below and discover its sentiment,
+                    keywords and overall insights.
+                </span>
+            </div>
+
+            <div class="analyzer-box">
+
+                <div class="input-area">
+                    <label for="feedback">Enter Feedback</label>
+
+                    <textarea
+                        id="feedback"
+                        placeholder="Example: The product is excellent and the service was very helpful..."
+                    ></textarea>
+
+                    <div class="input-footer">
+                        <span id="charCount">0 characters</span>
+                        <button onclick="analyzeFeedback()">
+                            Analyze with AI
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div class="results" id="results">
+
+                    <div class="result-header">
+                        <h3>Analysis Results</h3>
+                        <span id="status">Waiting...</span>
+                    </div>
+
+                    <div class="result-grid">
+
+                        <div class="result-card">
+                            <span class="result-icon">😊</span>
+                            <p>Sentiment</p>
+                            <h3 id="sentiment">-</h3>
+                        </div>
+
+                        <div class="result-card">
+                            <span class="result-icon">📊</span>
+                            <p>Score</p>
+                            <h3 id="score">-</h3>
+                        </div>
+
+                        <div class="result-card">
+                            <span class="result-icon">🔑</span>
+                            <p>Keywords</p>
+                            <h3 id="keywords">-</h3>
+                        </div>
+
+                    </div>
+
+                    <div class="insight">
+                        <h4>AI Insight</h4>
+                        <p id="insightText">
+                            Enter feedback to generate an insight.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="features-section" id="features">
+
+            <div class="section-heading">
+                <p>FEATURES</p>
+                <h2>Powerful Feedback Analysis</h2>
+                <span>
+                    Understand feedback quickly and make better decisions.
+                </span>
+            </div>
+
+            <div class="features">
+
+                <div class="feature-card">
+                    <div class="feature-icon">😊</div>
+                    <h3>Sentiment Analysis</h3>
+                    <p>
+                        Detect whether feedback is positive, negative,
+                        or neutral.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔑</div>
+                    <h3>Keyword Detection</h3>
+                    <p>
+                        Identify important words and topics from feedback.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Feedback Score</h3>
+                    <p>
+                        Calculate an approximate score based on sentiment
+                        and important words.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h3>Smart Insights</h3>
+                    <p>
+                        Generate simple recommendations based on the
+                        analyzed feedback.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about-section" id="about">
+
+            <div class="about-content">
+                <p class="tag">ABOUT PROJECT</p>
+
+                <h2>
+                    Make Feedback
+                    <span>More Valuable</span>
+                </h2>
+
+                <p>
+                    The AI-Powered Feedback Analyzer is a web-based system
+                    designed to analyze textual feedback automatically.
+                    It helps organizations understand user opinions without
+                    manually reading every feedback message.
+                </p>
+
+                <div class="stats">
+                    <div>
+                        <strong>3</strong>
+                        <span>Sentiments</span>
+                    </div>
+
+                    <div>
+                        <strong>4</strong>
+                        <span>Key Features</span>
+                    </div>
+
+                    <div>
+                        <strong>100%</strong>
+                        <span>Web Based</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            © 2026 AI-Powered Feedback Analyzer | B.Tech Web Technology Project
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
